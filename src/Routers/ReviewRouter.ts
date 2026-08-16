@@ -5,23 +5,12 @@ import "dotenv/config"
 const ReviewRouter = Router();
 
 ReviewRouter.get("/", async (req, res) => {
-    if (!req.body || !req.body.password) {
-        const reviews = await prisma.review.findMany({
-            where: {
-                isPublic: true
-            }
-        });
+    const reviews = await prisma.review.findMany({
+        where: {
+            isPublic: true
+        }
+    });
 
-        return res.json(reviews);
-    }
-
-    const { password } = req.body;
-
-    if (password !== process.env.ADMIN_PASSWORD) {
-        return res.status(401).json({ error: "Unauthorized access" });
-    }
-
-    const reviews = await prisma.review.findMany();
     return res.json(reviews);
 });
 
