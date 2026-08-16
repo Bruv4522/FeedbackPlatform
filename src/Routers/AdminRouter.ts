@@ -13,6 +13,7 @@ AdminRouter.get("/", async (req, res) => {
 });
 
 AdminRouter.get("/analyze/:id", async (req, res) => {
+
     const id = Number(req.params.id);
 
     const foundReview = await prisma.review.findUnique({
