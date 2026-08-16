@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-import ReviewRouter from "./ReviewRouter";
+import ReviewRouter from "./Routers/ReviewRouter";
 import { GoogleGenAI } from "@google/genai";
 
 const ai = new GoogleGenAI({

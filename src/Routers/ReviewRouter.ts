@@ -1,5 +1,5 @@
 import Router from "express";
-import prisma from "../src/Modules/prisma";
+import prisma from "../Modules/prisma";
 import "dotenv/config"
 
 const ReviewRouter = Router();
