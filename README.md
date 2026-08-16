@@ -1,0 +1,1 @@
+This is a feedback platform build in 2026 using Express, Typescript, and Prisma.js. Unfortunately the project does not have a lot of commit history because I developed much of it before deciding it's ambitious enough for me to upload to github and try to host it on Render. Right now it's in development, so let's see how this turns out.
