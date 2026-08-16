@@ -3,7 +3,7 @@ import "dotenv/config"
 async function AdminWare(req: any, res: any, next: any) {
     const allHeaders = req.headers;
 
-    if (!allHeaders || allHeaders["password"]) {
+    if (!allHeaders || !allHeaders["password"]) {
         return res.status(401).json({ error: "Required headers are null" });
         next();
     }
