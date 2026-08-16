@@ -1,0 +1,32 @@
+{
+  "name": "restaurantreviewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "buildPrisma": "prisma generate",
+    "buildTs": "tsc",
+    "buildNpm": "npm install",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^2.17.1",
+    "@prisma/client": "^6.19.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lru-cache": "^11.5.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.2.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^6.19.3",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
