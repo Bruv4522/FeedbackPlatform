@@ -9,3 +9,13 @@ export async function analyze(text: string) {
 
     return response.output_text;
 }
+
+export async function solution(text: string) {
+
+    const response = await ai.interactions.create({
+        model: "gemini-3.7-flash",
+        input: text + "// Please give a full solution to this. If it is positive, please explain how to keep the quality that way. If it is negative, please explain how to fix and prevent it from happening again. If the review does not contain enough info, simply state that."
+    });
+
+    return response.output_text;
+}

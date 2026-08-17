@@ -8,6 +8,10 @@ ReviewRouter.get("/", async (req, res) => {
     const reviews = await prisma.review.findMany({
         where: {
             isPublic: true
+        },
+
+        orderBy: {
+            dateTime: 'desc'
         }
     });
 
