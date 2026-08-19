@@ -11,7 +11,6 @@ function Reviews() {
 
     return (
         <>
-          <p>{reviews}</p>
         </>
     );
 }

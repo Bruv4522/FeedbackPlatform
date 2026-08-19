@@ -15,4 +15,5 @@ model Review {
   isPublic Boolean
   body     String
   admins   String[]
+  reports  String[]
 }
