@@ -8,8 +8,9 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
-app.use("/", ReviewRouter);
 app.use(cors());
+
+app.use("/", ReviewRouter);
 app.use("/admin", AdminRouter);
 
 app.listen(PORT, () => {
