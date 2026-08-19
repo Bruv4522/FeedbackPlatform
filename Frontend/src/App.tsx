@@ -11,7 +11,7 @@ function App() {
   }
 
   async function getName() {
-    const { value: name } = await Swal.fire({
+    await Swal.fire({
       title: "Question",
       text: "What's your name? ",
       input: "text",
