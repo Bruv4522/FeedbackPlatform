@@ -2,12 +2,14 @@ import express from "express";
 import "dotenv/config";
 import ReviewRouter from "./Routers/ReviewRouter";
 import AdminRouter from "./Routers/AdminRouter";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use("/", ReviewRouter);
+app.use(cors());
 app.use("/admin", AdminRouter);
 
 app.listen(PORT, () => {
