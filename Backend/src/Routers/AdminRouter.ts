@@ -2,6 +2,7 @@ import Router from "express";
 import AdminWare from "../Middleware/AdminWare";
 import prisma from "../Modules/prisma";
 import { analyze, solution } from "../Services/AIService";
+import cache from "../Modules/RateCache";
 
 const AdminRouter = Router();
 
@@ -89,5 +90,8 @@ AdminRouter.get("/solution/:id", async (req, res) => {
     return res.json({ message: output });
 });
 
+AdminRouter.get("/rates", (req, res) => {
+    return res.json([...cache.entries()]);
+});
 
 export default AdminRouter;
