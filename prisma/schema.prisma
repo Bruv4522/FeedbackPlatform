@@ -9,11 +9,12 @@ datasource db {
 }
 
 model Review {
-  id       Int      @id @default(autoincrement())
-  dateTime DateTime @default(now())
-  rating   Int
-  isPublic Boolean
-  body     String
-  admins   String[]
-  reports  String[]
+  id        Int      @id @default(autoincrement())
+  dateTime  DateTime @default(now())
+  rating    Int
+  isPublic  Boolean
+  body      String
+  admins    String[]
+  aiFlagged Boolean
+  reports   String[]
 }
