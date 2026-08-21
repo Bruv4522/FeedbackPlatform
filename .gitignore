@@ -1,89 +1,64 @@
 # ============================================
 # Dependencies
 # ============================================
-Backend/node_modules/
-Frontend/node_modules/
+node_modules/
 
 # ============================================
 # Environment / Secrets
 # ============================================
-Backend/.env
-Backend/.env.local
-Backend/.env.development
-Backend/.env.development.local
-Backend/.env.test
-Backend/.env.test.local
-Backend/.env.production
-Backend/.env.production.local
-
-Frontend/.env
-Frontend/.env.local
-Frontend/.env.development
-Frontend/.env.development.local
-Frontend/.env.test
-Frontend/.env.test.local
-Frontend/.env.production
-Frontend/.env.production.local
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
 
 # Keep example environment files in Git
-!Backend/.env.example
-!Frontend/.env.example
+!.env.example
 
 # ============================================
 # Build / Compiled Output
 # ============================================
-Backend/dist/
-Backend/build/
-Backend/out/
-
-Frontend/dist/
-Frontend/build/
-Frontend/out/
+dist/
+build/
+out/
 
 # TypeScript
-Backend/*.tsbuildinfo
-Frontend/*.tsbuildinfo
+*.tsbuildinfo
 
 # ============================================
 # Vite
 # ============================================
-Frontend/.vite/
+.vite/
 
 # ============================================
 # Prisma Generated Client
 # ============================================
-Backend/src/generated/
+src/generated/
 
 # ============================================
 # Logs
 # ============================================
-Backend/logs/
-Backend/*.log
-Backend/npm-debug.log*
-Backend/yarn-debug.log*
-Backend/pnpm-debug.log*
-
-Frontend/logs/
-Frontend/*.log
-Frontend/npm-debug.log*
-Frontend/yarn-debug.log*
-Frontend/pnpm-debug.log*
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
 # ============================================
 # Testing / Coverage
 # ============================================
-Backend/coverage/
-Backend/.nyc_output/
-
-Frontend/coverage/
-Frontend/.nyc_output/
+coverage/
+.nyc_output/
 
 # ============================================
-# Frontend Caches
+# Frontend / Build Caches
 # ============================================
-Frontend/.cache/
-Frontend/.parcel-cache/
-Frontend/.turbo/
+.cache/
+.parcel-cache/
+.turbo/
 
 # ============================================
 # OS Files
@@ -99,41 +74,19 @@ desktop.ini
 !.vscode/extensions.json
 !.vscode/settings.json
 
-Backend/.idea/
-Backend/*.iml
-
-Frontend/.idea/
-Frontend/*.iml
+.idea/
+*.iml
 
 # ============================================
 # Temporary Files
 # ============================================
-Backend/tmp/
-Backend/temp/
-Backend/*.tmp
-Backend/*.temp
-
-Frontend/tmp/
-Frontend/temp/
-Frontend/*.tmp
-Frontend/*.temp
-
-# ============================================
-# Vercel / Netlify / Cloudflare
-# ============================================
-Backend/.vercel/
-Backend/.netlify/
-Backend/.wrangler/
-
-Frontend/.vercel/
-Frontend/.netlify/
-Frontend/.wrangler/
+tmp/
+temp/
+*.tmp
+*.temp
 
 # ============================================
 # Miscellaneous
 # ============================================
-Backend/*.swp
-Backend/*.swo
-
-Frontend/*.swp
-Frontend/*.swo
+*.swp
+*.swo
